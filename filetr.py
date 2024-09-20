@@ -1,6 +1,6 @@
 import os
 from configparser import ConfigParser
-from trans.module2 import TransLate
+from trans.module2 import TransLate,LangDetect
 import re
 
 def count_sentences(text):
@@ -43,6 +43,7 @@ def main():
         print(f"Characters: {char_count}")
         print(f"Words: {word_count}")
         print(f"Sentences: {sentence_count}")
+        print(f"Language: {LangDetect(text)}")
 
         if char_count > max_chars:
             text = text[:max_chars]

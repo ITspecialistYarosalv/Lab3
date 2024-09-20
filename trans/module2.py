@@ -44,4 +44,4 @@ def LanguageList(out: str = "screen", text: str = "") -> str:
             return "Error: Unsupported output option"
 
         return "Ok"
-# Виклик функції для перевірки
+
